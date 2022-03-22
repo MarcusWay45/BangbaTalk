@@ -10,7 +10,7 @@ const AdjacentPosts = ({ createdAt, slug }) => {
   useEffect(() => {
     getAdjacentPosts(createdAt, slug).then((result) => {
       setAdjacentPost(result);
-      setDataLoaded(true);
+      setDataLoaded(true)
     });
   }, [slug]);
 
